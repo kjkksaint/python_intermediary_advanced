@@ -1,0 +1,11 @@
+Flask>=2.3
+Flask-Login
+SQLAlchemy
+psycopg2-binary
+requests
+python-dotenv
+APScheduler
+twilio
+pywhatkit
+gunicorn
+python-json-logger

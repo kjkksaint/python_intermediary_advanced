@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Dashboard</title></head><body>
+  <h1>Dashboard</h1>
+  <a href="/logout">Sair</a>
+  <table border="1">
+    <tr><th>ID</th><th>CPF</th><th>Nome</th><th>Margem</th><th>Conta</th><th>Data</th></tr>
+    {% for c in consultas %}
+      <tr>
+        <td>{{ c.id }}</td>
+        <td>{{ c.cpf }}</td>
+        <td>{{ c.nome }}</td>
+        <td>{{ c.margem }}</td>
+        <td>{{ c.conta }}</td>
+        <td>{{ c.data }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body></html>
